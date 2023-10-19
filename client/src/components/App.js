@@ -1,12 +1,17 @@
 //import logo from '../logo.svg';
 import '../App.css';
+import Header from "./Header";
 import Banner from "./Banner";
-//import Footer from "./Footer";
+import Body from "./Body";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <Banner></Banner>
+      <Body></Body>
+      <Footer></Footer>
     </div>
   );
 }
