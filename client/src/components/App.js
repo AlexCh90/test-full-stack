@@ -1,8 +1,7 @@
-//import logo from '../logo.svg';
 import '../App.css';
 import Header from "./Header";
 import Banner from "./Banner";
-import Body from "./Body";
+import Home from "../pages/Home";
 import Footer from "./Footer";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
     <div>
       <Header></Header>
       <Banner></Banner>
-      <Body></Body>
+      <Home></Home>
       <Footer></Footer>
     </div>
   );

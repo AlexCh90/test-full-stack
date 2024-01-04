@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 function Banner() {
     return(
-        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <nav className="navbar navbar-expand-lg sticky-top bg-transparent">
             <div className="container">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link to="/" className="navbar-brand">Accueil</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -14,7 +16,7 @@ function Banner() {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link to="/page1" className="nav-link active" aria-current="page">Page 1</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Link</a>
@@ -24,7 +26,7 @@ function Banner() {
                                     Dropdown
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
+                                    <li><a className="dropdown-item" href="page1">Action</a></li>
                                     <li><a className="dropdown-item" href="#">Another action</a></li>
                                     <li><hr className="dropdown-divider"/></li>
                                     <li><a className="dropdown-item" href="#">Something else here</a></li>

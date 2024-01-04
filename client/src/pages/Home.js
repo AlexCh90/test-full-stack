@@ -1,6 +1,6 @@
-function Body(){
+function Home(){
 	return (
-		<div className="container">
+		<div className="container paragraph">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis pharetra mauris. Phasellus suscipit at ex sit amet consectetur.
 				Pellentesque vulputate viverra felis, a ultrices lectus condimentum ac. Nam vel purus at metus laoreet malesuada in quis ipsum. Maecenas
@@ -89,4 +89,4 @@ function Body(){
 		)
 }
 
-export default Body
+export default Home
