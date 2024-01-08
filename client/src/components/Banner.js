@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import {useEffect, useState} from "react";
 
-function Banner() {
+function Banner(){
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 10);
+        });
+    });
+
     return(
-        <nav className="navbar navbar-expand-lg sticky-top navbar-scroll">
+        <nav className="navbar navbar-expand-lg sticky-top bg-light">
             <div className="container">
                 <Link to="/" className="navbar-brand">Accueil</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" aria-label="Toggle navigation">
@@ -26,7 +35,7 @@ function Banner() {
                                     Dropdown
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="page1">Action</a></li>
+                                    <li><a className="dropdown-item" href="#">Action</a></li>
                                     <li><a className="dropdown-item" href="#">Another action</a></li>
                                     <li><hr className="dropdown-divider"/></li>
                                     <li><a className="dropdown-item" href="#">Something else here</a></li>
