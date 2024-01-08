@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Banner() {
     return(
-        <nav className="navbar navbar-expand-lg sticky-top bg-transparent">
+        <nav className="navbar navbar-expand-lg sticky-top navbar-scroll">
             <div className="container">
                 <Link to="/" className="navbar-brand">Accueil</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" aria-label="Toggle navigation">

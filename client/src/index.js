@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/index.scss';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import PageUn from "./pages/PageUn";
