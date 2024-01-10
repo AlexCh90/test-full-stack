@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './styles/index.scss';
+import './styles/index.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import PageUn from "./pages/PageUn";
@@ -14,10 +14,14 @@ ReactDOM.render(
     <Router>
       <Header></Header>
       <Banner></Banner>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<PageUn />}/>
-      </Routes>
+      <div id="page-container">
+        <div id="content-wrap">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/page1" element={<PageUn />}/>
+          </Routes>
+        </div>
+      </div>
       <Footer></Footer>
     </Router>
   </React.StrictMode>,
