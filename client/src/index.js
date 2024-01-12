@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './styles/index.scss';
+import './styles/index.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import PageUn from "./pages/PageUn";
+import PageDeux from "./pages/PageDeux";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
@@ -14,10 +15,15 @@ ReactDOM.render(
     <Router>
       <Header></Header>
       <Banner></Banner>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<PageUn />}/>
-      </Routes>
+      <div id="page-container">
+        <div id="content-wrap">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/page1" element={<PageUn />}/>
+            <Route path="/page2" element={<PageDeux/>}/>
+          </Routes>
+        </div>
+      </div>
       <Footer></Footer>
     </Router>
   </React.StrictMode>,

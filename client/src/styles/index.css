@@ -16,3 +16,19 @@ code {
   text-align: justify;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  background-color: #2E3033;
+  color: #ffffff;
+  width: 100%;
+}
