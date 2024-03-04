@@ -1,11 +1,26 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "../styles/banner.scss"
 
-function Banner(){
+const Banner = () => {
+    const [navbar, setNavbar] = useState(false)
+    const changeBackground = () => {
+        console.log(window.scrollY)
+        if (window.scrollY >= 100) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    useEffect(() => {
+        changeBackground()
+        // adding the event when scroll change background
+        window.addEventListener("scroll", changeBackground)
+    })
+
     return(
-        
-
-        <nav className="navbar navbar-expand-lg sticky-top bg-dark">
+        <nav className={navbar ? "navbar ontop navbar-expand-lg sticky-top" : "navbar notontop navbar-expand-lg sticky-top"}>
             <div className="container">
                 <Link to="/" className="navbar-brand">Accueil</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" aria-label="Toggle navigation">

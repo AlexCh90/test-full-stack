@@ -1,3 +1,12 @@
-@mixin coleur-navbar(){
-    @if()
+$color-ontop: #FEC300;
+$color-notontop: #D7CBA5;
+
+.ontop{
+    background-color: $color-ontop;
+    transition-duration: 1.5s;
+}
+
+.notontop{
+    background-color: $color-notontop;
+    transition-duration: 1.5s;
 }

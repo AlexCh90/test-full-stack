@@ -1,3 +1,5 @@
+import "../styles/footer.scss"
+
 function Footer(){
     return(
         <footer id="footer" className="page-footer font-small blue pt-4">
