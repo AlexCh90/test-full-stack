@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../styles/banner.scss"
+import "../assets/styles/banner.scss"
 
 const Banner = () => {
     const [navbar, setNavbar] = useState(false)
@@ -20,7 +20,7 @@ const Banner = () => {
     })
 
     return(
-        <nav className={navbar ? "navbar ontop navbar-expand-lg sticky-top" : "navbar notontop navbar-expand-lg sticky-top"}>
+        <nav className={navbar ? "navbar ontop navbar-expand-lg sticky-top banner" : "navbar notontop navbar-expand-lg sticky-top banner"}>
             <div className="container">
                 <Link to="/" className="navbar-brand">Accueil</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" aria-label="Toggle navigation">
@@ -38,17 +38,6 @@ const Banner = () => {
                             </li>
                             <li className="nav-item">
                                 <Link to="/page2" className="nav-link active" aria-current="page">Page 2</Link>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr className="dropdown-divider"/></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './assets/styles/index.scss';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import PageUn from "./pages/PageUn";
@@ -9,13 +9,14 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import reportWebVitals from './reportWebVitals';
+import Carousel from "./components/Carousel";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header></Header>
       <Banner></Banner>
-      <div id="page-container">
+      <div id="page-container" className="container">
         <div id="content-wrap">
           <Routes>
             <Route path="/" element={<Home />} />

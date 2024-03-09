@@ -1,4 +1,12 @@
+$fond: rgba(255,255,255,0.25);
+
+.header{
+    display: block;
+    position: relative;
+}
+
 .shown-header{
+    z-index: 5;
     visibility: visible;
     opacity: 1;
 
@@ -6,6 +14,7 @@
 }
 
 .hidden-header{
+    z-index: 5;
     visibility: hidden;
     opacity: 0;
     
